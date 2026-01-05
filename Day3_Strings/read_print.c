@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int a = 10;
-    int *p;
+    char str[50];
 
-    p = &a;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
 
-    printf("Value of a = %d\n", a);
-    printf("Address of a = %p\n", &a);
-    printf("Value of p = %p\n", p);
-    printf("Value at p = %d\n", *p);
+    printf("You entered: %s", str);
 
     return 0;
 }
