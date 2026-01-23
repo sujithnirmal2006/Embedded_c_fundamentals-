@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int i,a,b,c=0;
+    int x[5],y[5];
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&x[i]);
+        b=x[i];
+        a=0;
+        while(b!=0)
+        {
+            a=a*10 + b%10;
+            b=b/10;
+        }
+        y[i]=a;
+        c=c + y[i];
+    }
+    printf("%d",c);
+}
